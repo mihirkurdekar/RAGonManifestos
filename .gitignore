@@ -1,0 +1,4 @@
+.venv
+markdown
+trained_agents_data.pkl
+.idea
