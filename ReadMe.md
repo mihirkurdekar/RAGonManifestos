@@ -20,6 +20,10 @@ You'll need following before starting
 * [llama3.2](https://ollama.com/library/llama3.2) - llm runing in ollama, I got 3b version
 * Python 3.11 - to run the code
 * pip - to install dependencies
+* Manifesto files for RAG
+
+
+
 
 
 
