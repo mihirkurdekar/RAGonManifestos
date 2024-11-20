@@ -49,7 +49,7 @@ task_consolidate = Task(
     description="""Create a summary table with Categories like Governance, Economic Development, Social Welfare......""",
     expected_output="Extract key insights so a voter can read this document to gain insights",
     agent=consolidation_agent,
-    output_file="markdown/mva2.md",
+    output_file="markdown/mva.md",
 )
 
 
