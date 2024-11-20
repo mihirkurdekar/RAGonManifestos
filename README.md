@@ -1,7 +1,12 @@
-# RAG agents for political manifestos
+# RAG agents for analyzing election manifestos
 
-I got a couple of election manifestos files for upcoming elections. I ran RAG to get a summary of manifestos.
-I tried to do RAG with crew AI and locally installed ollama llama3.2 LLM.
+I wrote a [LinkedIn Article](https://www.linkedin.com/pulse/prompt-engineering-election-manifesto-mihir-kurdekar-jqgrf/?trackingId=pTmbyhtVTkCUjp93YI0%2BPw%3D%3D) explaining how we can leverage LLM and prompt engineering to check election manifestos.
+
+I got a couple of election manifestos files for upcoming elections in Maharashtra state assembly elections.
+I tried to RAG with chatGPT to get a summary of manifestos but ran into limit for the day after just 1 file.
+So, I tried to do RAG with crew AI and locally installed ollama llama3.2 LLM, so I don't hit any limits. 
+This code base will help you do RAG with AI agents on a document.
+
 
 ## Hardware
 Since we are doing everything locally the hardware component matters here.
@@ -63,8 +68,8 @@ You'll need to edit 2 lines before executing the script
 * Line 19 has path to manifext text file
 * Line 52 has path to output markdown file
 Just verify these paths, and you can run the script.
-  
-You can see the output in markdown folder.
+
+If you want to change LLM to something else just change the llm input for agents in file.
 
 
 #### Sample output 
