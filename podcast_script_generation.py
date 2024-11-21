@@ -73,4 +73,7 @@ result = crew.kickoff()
 print("############")
 print(result)
 print("Done")
-print("--- %s seconds ---" % (time.time() - start_time))
+time_diff = time.time() - start_time
+print("--- %s seconds ---" % (time_diff))
+# print time difference in minutes
+print("--- %s minutes ---" %(round(time_diff/60,2)))
