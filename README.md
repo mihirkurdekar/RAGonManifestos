@@ -1,6 +1,7 @@
 # RAG agents for analyzing election manifestos
 
 I wrote a [LinkedIn Article](https://www.linkedin.com/pulse/prompt-engineering-election-manifesto-mihir-kurdekar-jqgrf/?trackingId=pTmbyhtVTkCUjp93YI0%2BPw%3D%3D) explaining how we can leverage LLM and prompt engineering to check election manifestos.
+Alos a [Medium article](https://medium.com/@mihir.kurdekar/prompt-engineering-with-local-ai-with-open-web-ui-and-ollama-to-get-insights-on-election-manifestos-fb064db34fdb) explaing how to set it up in local.
 
 I got a couple of election manifestos files for upcoming elections in Maharashtra state assembly elections.
 I tried to RAG with chatGPT to get a summary of manifestos but ran into limit for the day after just 1 file.
