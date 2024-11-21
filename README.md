@@ -23,7 +23,7 @@ I have tried to run in Windows workstation we still get the output but process i
 You'll need following before starting 
 * [Ollama](https://ollama.com/) - platform to deploy and manage LLMs locally
 * [llama3.2](https://ollama.com/library/llama3.2) - llm runing in ollama, I got 3b version you can get higher if you have more memory available
-* Python 3.11 - to run the code
+* Python 3.10 - to run the code
 * pip - to install dependencies
 * Manifesto files for RAG
 
@@ -55,6 +55,8 @@ Since pdf files can't be processed directly we need to convert them to text form
 In the file you can see the path to pdf file at line 3 and path to save text file at line 7.
 Edit the names as per you files and run script for all manifest files.
 Once we have text files for all the manifesto files we are good to run AI agents.
+
+I have already added the text files for the 2 manifestos which I got to this repository. If you want to do it for some other file, you need to do this step.
 
 ### Run AI agent workflow 
 

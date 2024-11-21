@@ -16,7 +16,7 @@ llm_llama = ChatOpenAI(
     base_url="http://localhost:11434/v1",
 )
 
-file_read_tool = FileReadTool(file_path='manifestos/mva-manifesto.txt')
+file_read_tool = FileReadTool(file_path='manifestos/bjp-manifesto.txt')
 
 summarizer_agent = Agent(
     role="Political Reporter",
@@ -46,10 +46,11 @@ consolidation_agent = Agent(
 )
 
 task_consolidate = Task(
-    description="""Create a summary table with Categories like Governance, Economic Development, Social Welfare......""",
+    description="""Create a summary table with Categories like Governance, Economic Development, Social Welfare 
+    along with any other social political issues mentioned""",
     expected_output="Extract key insights so a voter can read this document to gain insights",
     agent=consolidation_agent,
-    output_file="markdown/mva.md",
+    output_file="markdown/bjp3.md",
 )
 
 
@@ -69,7 +70,7 @@ task_consolidate = Task(
 # )
 
 crew = Crew(
-    agents = [summarizer_agent],
+    agents = [summarizer_agent, consolidation_agent],
     tasks = [task_consolidate],
     verbose = 2
 )
